@@ -1,0 +1,194 @@
+*{
+    background: #363636;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: min(100vh,auto);
+    position: relative;
+}
+:root{
+    --widthVideo: 850px;
+}
+#myVideo{
+    position: relative;
+    width: var(--widthVideo);
+    height: calc(var(--widthVideo) / 2);
+    max-width: var(--widthVideo);
+    max-height: calc(var(--widthVideo) / 2);
+    right: 25px;
+    top: 10px;
+    left: calc(50% - calc(var(--widthVideo) / 2));
+    border: thin solid white;
+    z-index: 1;
+}
+#line{
+    margin-top: 20px;
+    max-width: 850px;
+    cursor: pointer;
+    border: none;
+}
+.inputRanger{
+    position: relative;
+    width: var(--widthVideo);
+}
+#timeCurrent, #volume, #tempoTotal{
+    font-size: 20px;
+}
+
+button,[type='file']{
+    background: yellowgreen;
+    color: #363636;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+[type='file']{
+    position: relative;
+    width: 126px;
+    padding: 5px;
+    padding-top: 7px;
+    height: 35px;
+    top: 0px;
+    z-index: 10;
+    display: none;
+}
+#titulo{
+    position: relative;
+    font-size: 20px;
+    bottom: 25px;
+    right: 25px;
+    width: 100%;
+    text-align: center;
+    background: none;
+    margin-left: 25px;
+    color: yellowgreen;
+}
+.controles{
+    position: relative;
+    top: 0px;
+    background: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 2;
+}
+.vertical-range {
+    position: relative;
+    /*writing-mode: bt-lr;*/ /* Define a direção vertical do controle */
+    /*transform: rotate(-90deg);*/ /* Rotaciona o controle para ficar na vertical */
+    height: 50px;
+    width: 130px;
+    top: 17px;
+}
+#play{
+    width: 40px; 
+    height: 40px;
+    background: none;
+    background-image: url('img/controlls2yb.png'); 
+    background-position: -205px -7px;
+}
+#reload{
+    width: 40px; 
+    height: 40px;
+    background: none;
+    background-image: url('img/controlls2yb.png'); 
+    background-position: -104px -258px; 
+}
+#mud{
+    width: 40px; 
+    height: 40px;
+    background: none;
+    background-image: url('img/controlls2yb.png'); 
+    background-position: -154px -108px;
+}
+#full{
+    width: 40px; 
+    height: 40px;
+    background: none;
+    background-image: url('img/controlls2yb.png'); 
+    background-position: -54px -305px;
+}
+#open{
+    width: 40px; 
+    height: 40px;
+    background: none;
+    background-image: url('img/controlls2yb.png'); 
+    background-position: -207px -208px;
+}
+#volume--{
+    width: 40px; 
+    height: 40px;
+    background: none;
+    background-image: url('img/controlls2yb.png'); 
+    background-position: -55px -259px;
+}
+.volumeMM{
+    width: 40px; 
+    height: 40px;
+    background: none;
+    background-image: url('img/controlls2yb.png'); 
+    background-position: -5px -259px;
+}
+.volumeM{
+    width: 40px; 
+    height: 40px;
+    background: none;
+    background-image: url('img/controlls2yb.png'); 
+    background-position: -155px -109px;
+}
+#volume-{
+    width: 40px; 
+    height: 40px;
+    background: none;
+    background-image: url('img/controlls2yb.png'); 
+    background-position: -205px -109px;
+}
+#avanca10{
+    width: 40px; 
+    height: 40px;
+    background: none;
+    background-image: url('img/controlls2yb.png'); 
+    background-position: -5px -8px;
+}
+#voltar10{
+    width: 40px; 
+    height: 40px;
+    background: none;
+    background-image: url('img/controlls2yb.png'); 
+    background-position: -303px -8px;
+}
+#player{
+    display: none;
+}
+#carregar{
+    padding: 10px;
+    font-size: 25px;
+    margin-top: calc(25% - 30px);
+}
+#timeDiv {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    z-index: 10;
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: none;
+    background: yellowgreen;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 5px;
+    margin-top: -10px;
+    font-size: 20px;
+    color: #000;
+}
+#boxLine{
+    cursor: pointer;
+    position: relative;
+}

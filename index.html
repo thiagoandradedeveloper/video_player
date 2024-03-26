@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="player">
+        <video src="video.mp4" id="myVideo">
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.webm" type="video/webm">
+            <source src="video.ogv" type="video/ogg">
+            <source src="video.mkv" type="video/x-matroska">
+            <source src="video.flv" type="video/x-flv">
+            <source src="video.av1" type="video/av1">
+            <source src="video.mpeg" type="video/mpeg">
+            <source src="video.theora" type="video/theora">
+        </video>
+        <div class="controles">
+            <span id="boxLine">
+                <div id="timeDiv">0:00</div>
+                <input type="range" min="0" max="100" step="1" id="line" class="inputRanger" value="0" accept=".mp4,.avi,.webm,.mp3,.WEBA">
+            </span>
+            <br>            
+            <button id="play"></button>
+            <button id="reload"></button>
+            <button id="avanca10"></button>
+            <button id="voltar10"></button>
+            <button id="mud"></button>
+            <button id="volume--"></button>
+            <button id="volume-"></button>
+            <button id="volume+"  class="volumeM"></button>
+            <button id="volume++" class="volumeMM"></button>
+            <button id="full"></button>
+            <button id="open"></button>
+            <input type="file" id="fileInput">
+            <input type="range" class="vertical-range" min="0" max="1" step="0.01" value="0.5" id="rangerVolume"> 
+            <br>
+            <div>
+                Current Time: <span id="timeCurrent">0:00</span>
+                / <span id="tempoTotal">0:00</span>
+                &nbsp;&nbsp;&nbsp;
+                Volume: <span id="volume">0</span>
+            </div>          
+            <br><br>            
+            <div id="titulo">Choose a video!</div>
+        </div>
+    </div>
+    <button id="carregar">Open Video</button>  
+</body>
+</html>
